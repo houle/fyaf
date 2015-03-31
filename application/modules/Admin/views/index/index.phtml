@@ -1,0 +1,134 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<link href="/aadmin/css/index.css" type="text/css" rel="stylesheet">
+<link href="/aadmin/css/reset.css" type="text/css" rel="stylesheet">
+<script	type="text/javascript" src="/js/jquery.min.js"></script>
+<script	type="text/javascript" src="/js/index.js"></script>
+
+
+<title>YYmsgBoard</title>
+
+</head>
+<body scroll="auto">
+
+<div id="header">
+	<div class='yy-box'>
+		<div class='yy-top'>
+			<div class="logo">
+				<a href="<?php echo SYSTEMURL;?>"><span><font  color="white"><span style="font-size:40px">YY</span>后台管理系统</font></span></a><span style="color:white;margin-left:20px"><?php $session = Yaf_Session::getInstance(); echo $session->name;?>,欢迎你！</span>
+			</div>
+			<div class='logout'>
+			   
+				<a href="__APP__">站点主页</a>
+				<a href="<?php echo ADMINURL;?>/Login/logout">退出登录</a>
+			</div>
+		</div>
+		<div class='bar'>
+			<div class='home'>
+				<a href="__APP__"></a>
+			</div>
+			<div class="nav">
+				
+				<a href="javascript:void(0);">会员管理</a>
+				
+				<a href="javascript:void(0);">node管理</a>
+				
+				<a href="javascript:void(0);">role管理</a>
+			
+				<a href="javascript:void(0);">商铺管理</a>
+				
+				<a href="javascript:void(0);">商品管理</a>
+				
+				<a  href="javascript:void(0);">订单管理</a>
+				
+				<a class='active' href="javascript:void(0);">站点概要</a>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="box">
+	<div id="sidebar">
+		<!-- 会员管理 -->
+		<div class='menuItem'>
+			<div class='menu'>
+				<a class='title' href="javascript:void(0);">会员管理</a>
+				<ul class='menuList' >
+					<li><a target="showContent" href="<?php echo ADMINURL;?>/User/index">Userlist</a></li>
+					<li><a target="showContent" href="<?php echo ADMINURL;?>/User/add">addUser</a></li>
+				</ul>
+			</div>
+		</div>
+		<!-- 地区管理 -->
+		<div class='menuItem'>
+			<div class='menu'>
+				<a class='title' href="javascript:void(0);">Node管理</a>
+				<ul class='menuList' >
+					<li><a  target="showContent" href="<?php echo ADMINURL;?>/Node/index">NodesList</a></li>
+					<li><a target="showContent" href="<?php echo ADMINURL;?>/Node/add">addNode</a></li>
+					<li><a  target="showContent" href="<?php echo ADMINURL;?>/Node/edit">editNode</a></li>
+				</ul>
+			</div>
+		</div>
+		<!-- 分类管理 -->
+		<div class='menuItem'>
+			<div class='menu'>
+				<a class='title' href="javascript:void(0);">Role管理</a>
+				<ul class='menuList' >
+					<li><a  target="showContent" href="<?php echo ADMINURL;?>/Role/index">RolesList</a></li>
+					<li><a target="showContent" href="<?php echo ADMINURL;?>/Role/add">addRole</a></li>
+					<li><a  target="showContent" href="<?php echo ADMINURL;?>/Role/edit">editRole</a></li>
+				</ul>
+			</div>
+		</div>
+		<!-- 商铺管理 -->
+		<div class='menuItem'>
+			<div class='menu'>
+				<a class='title' href="javascript:void(0);">商铺管理</a>
+				<ul class='menuList' >
+					<li><a target="showContent" href=""></a></li>
+					<li><a target="showContent" href=""></a></li>
+				</ul>
+			</div>	
+		</div>	
+		<!-- 商品管理 -->
+		<div class='menuItem'>
+			<div class='menu'>
+				<a class='title' href="javascript:void(0);">商品管理</a>
+				<ul class='menuList' >
+					<li><a target="showContent" href=""></a></li>
+					<li><a target="showContent" href=""></a></li>
+				</ul>
+			</div>	
+		</div>
+		<!-- 订单管理 -->
+		<div class='menuItem'>
+			<div class='menu'>	
+				<a class='title' href="javascript:void(0);">订单管理</a>
+				<ul class='menuList' >
+					<li><a target="showContent" href=""></a></li>
+					<li><a target="showContent" href=""></a></li>
+				</ul>
+			</div>
+		</div>
+		<!-- 站点概要 -->
+		<div class='menuItem' style="display:block;">
+			<div class='menu'>	
+				<a class='title' href="javascript:void(0);">站点概要</a>
+				<ul class='menuList' >
+					<li><a target="showContent"href=""></a></li>
+					<li><a target="showContent" href=""></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div id="content">
+		 <iframe id="iContent" name='showContent' scrolling="auto" height="100%" width="100%" frameborder="0" src="" >
+     		  
+	 	</iframe>
+	</div>
+</div>
+</body>
+</html>

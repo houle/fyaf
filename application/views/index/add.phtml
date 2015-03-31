@@ -1,0 +1,44 @@
+<html>
+ <head>
+   <title>MsgBoard</title>
+     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link rel="stylesheet" href="/css/bootstrap.min.css" type="text/css" media="screen,print" />
+	<link rel="stylesheet" href="/css/common.css" type="text/css" media="screen,print" />
+	<link rel="stylesheet" href="/css/site.css" type="text/css" media="screen,print" />
+	<script src="/js/jquery.min.js"></script>
+	<script src="/js/bootstrap.min.js"></script>
+</head>
+ <body>
+ 	<div class="contaner">
+ 		<div class="row">
+ 			<div class="col-xs-12">
+ 				<div class="col-xs-4"></div>
+ 				<div class="col-xs-4"><h1>MsgBoard</h1></div>
+ 				<div class="col-xs-4"><?php if(!empty($msg))echo $msg;?></div>
+ 			</div>
+ 			<div class="col-xs-12">
+                 <form class="form-horizontal" action="<?php echo SYSTEMURL;?>/index/index/addhandle" method="post">
+				  <div class="form-group">
+				    <label for="name" class="col-sm-2 control-label">name</label>
+				    <div class="col-sm-5">
+				      <input type="text" class="form-control" id="name" name="name" placeholder="name">
+				    </div>
+				  </div>
+				  <div class="form-group">
+				    <label for="content" class="col-sm-2 control-label">Message</label>
+				    <div class="col-sm-8">
+				      <textarea name="content" class="form-control" id="" ></textarea>
+				    </div>
+				  </div>
+				  <div class="form-group">
+				    <div class="col-sm-offset-2 col-sm-10">
+				      <button type="submit" class="btn btn-primary">Submit</button>
+				    </div>
+				  </div>
+				</form>  
+ 			</div>
+ 		</div>
+ 	</div>
+
+ </body>
+</html>

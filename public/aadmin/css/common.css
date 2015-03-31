@@ -1,0 +1,12 @@
+@CHARSET "UTF-8";
+/**{margin:0px;padding:0px;}*/
+body{
+   padding: 20px 20px 30px 10px;
+}
+
+/********************* 分类层级  *************************/
+.table tbody .hide{
+	display:none;
+}
+
+
